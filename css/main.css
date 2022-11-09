@@ -158,14 +158,12 @@ position: relative;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    opasity: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav .link:hover,
 .header-nav .link:focus {
 color: var(--accent-text-color);
-    opasity: 1;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -260,14 +258,12 @@ padding: 10px 32px;
     font-family: inherit;
     letter-spacing: 0.06em;
     cursor: pointer;
-    opasity: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
 background-color: var(--button-bcg-color);
-    opasity: 1;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -427,14 +423,12 @@ width: 100%;
     height: 100%;
 background-color: #ffffff;
     border-radius: 50%;
-    opasity: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
 .socials-link:focus {
 background-color: var(--button-bcg-color);
-    opasity: 1;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -477,7 +471,6 @@ width: 170px;
 border: 1px solid #afb1b8;
     border-radius: 4px;
 color: #afb1b8;
-    opasity: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -485,7 +478,6 @@ color: #afb1b8;
 .clients-link:focus {
 border-color: var(--accent-text-color);
     color: var(--accent-text-color);
-    opasity: 1;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -515,7 +507,6 @@ cursor: pointer;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    opasity: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -529,7 +520,6 @@ color: var(--title-white-color);
     background-color: var(--accent-text-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-    opasity: 1;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -582,7 +572,6 @@ color: var(--paragraph-text-color);
 
 .project-link {
 display: block;
-    opasity: 0;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -590,7 +579,6 @@ display: block;
 .project-link:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
-    opasity: 1;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -621,7 +609,8 @@ transition: transform 250ms;
     padding: 63px 24px;
 }
 
-.card:hover .card-overlay {
+.card:hover .card-overlay,
+.card:focus-within .card-overlay {
     transform: translateY(0);
 }
 
@@ -652,15 +641,12 @@ margin-top: 0px;
 color: var(--title-white-color);
     text-decoration: none;
     line-height: 1.71;
-    opasity: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .link-adress:hover,
 .footer .link-adress:focus {
 color: var(--accent-text-color);
-
-    opasity: 1;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -671,14 +657,12 @@ font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.03em;
     color: var(--footer-links-color);
-    opasity: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list-footer .link:hover,
 .contacts-list-footer .link:focus {
 color: var(--accent-text-color);
-    opasity: 1;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -728,14 +712,12 @@ width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    opasity: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
 background-color: var(--button-bcg-color);
-    opasity: 1;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -754,7 +736,7 @@ fill: #ffffff;
 
     width: 100%;
     height: 100%;
-transition: opasity 150ms linear, visibility 150ms linear;
+    transition: opacity 250ms linear, visibility 250ms;
 }
 
 .backdrop.is-hidden {
